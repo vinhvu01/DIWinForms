@@ -20,7 +20,7 @@ namespace DIWinForms
             var host = CreateHostBuilder().Build();
             ServiceProvider = host.Services;
 
-            Application.Run(ServiceProvider.GetRequiredService<Form4>());
+            Application.Run(ServiceProvider.GetRequiredService<Form1>());
         }
 
         public static IServiceProvider ServiceProvider { get; private set; }
@@ -33,6 +33,7 @@ namespace DIWinForms
                     services.AddTransient<Form2>();
                     services.AddTransient<Form3>();
                     services.AddTransient<Form4>();
+                    services.AddTransient<Form5>();
                 });
         }
     }
