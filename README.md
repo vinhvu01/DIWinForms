@@ -24,7 +24,7 @@ Research Dependency Injection for WinForms
 				public Form1(IHelloService helloService, Form2 form2)
 				{ 
 				     InitializeComponent();
-             form2.ShowDialog();
+   					form2.ShowDialog();
 				}
    
 4. If you need multiple instances of Form2 or you need to initialize it multiple times, then you may get an instance of it like this:
